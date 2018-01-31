@@ -1,0 +1,47 @@
+	<!DOCTYPE html>
+
+	<html>
+
+	<head>       
+		<meta charset="utf-8"> 
+		<title>Examen diagnostico</title>
+	</head>
+
+
+	<body>
+
+		
+
+		<SCRIPT  language=JavaScript> 
+			function go(){
+				if (document.form.contraseña.value=='admin' && document.form.usuario.value=='admin'){ 
+					alert("Login correcto"); 
+					//document.location.href="principal.html";
+				} 
+				else{ 
+					alert("Usuario y/o contraseña incorrectos "); 
+				} 
+			} 
+		</SCRIPT> 
+
+		<form name=form>
+
+
+			<div class="container" align="CENTER"> 
+				<label for="usuario">Usuario   </label>
+				<br/> <br/>
+				<input type="text" name="usuario" id="usuario" placeholder="Usuario">
+				<br/> <br>
+				<label for="contraseña">Contraseña </label>
+				<br/> <br/>
+				<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+				<br/> <br/>
+
+				<input onclick="go()" type="submit" value="Entrar">
+
+			</div>
+
+		</form>
+	</body>
+
+	</html>
